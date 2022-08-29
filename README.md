@@ -43,5 +43,9 @@ Following are the state-of-art member selection methods for outlier detection en
         your R-workspace.
       - Add all the score lists in the ensemble input scorelist: SCORE_LIST_SET (as mentioned in Main.R). We use 1-11 lists numbers for 11 variants of Average k-NN, 12-22 for LOF varaints, and 23-33 for SOD variants. 
  - Now, execute the file: "Main.R". Other than 2-Mandatory-Inputs: SCORE_LIST_SET and DATA_LABELS, we in this file have set the default values for other input parameters. 
-   Generated resultant ensemble ROC AUC scores correspond to - G-Select, V-select, Boost-select, and AnD-SELECT
-   for publication), respectively.
+  Choose any one out of four ODE selecotrs at a time, using selector_choice (1/2/3/4): 1:G-Select, 2:V-select, 3:Boost-select, and 4:AnD-SELECT.
+  Choose any one of the score scaling methods, using norm_choice (1/2): 1:Z-norm scores, 2:G-norm scores
+  Choose any one of the way for EP-calculation (Default is MAX-EP, and recommended also): 1:MAX-EP, 2:AVG-EP
+  Output will be Final Ensemble Score List (normalized) using FairComb (May be updated by FairComb or May be same as Input when no updation needed)
+  
+  
