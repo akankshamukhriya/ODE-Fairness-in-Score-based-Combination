@@ -12,10 +12,10 @@ The benchmark datasets used in the paper (under review for publication) are: ALO
 Following are the list of .R files required to run the ensemble selection approach:
 
 1. Base Outlier Detection Methods: 
-In our work, we use six base detectors: Average k-NN, LOF, KDEOS, COF, LDOF, and LDF detectors. Other than for Average k-NN, we use ELKI framework to execute rest five detectors on eleven benchmark datasets, used in the manuscript (under review for publication). ELKI is an open source software, and the link, as provided in the paper (under review for publication), is: https://elki-project.github.io/algorithms/
+In our work, we use three base detectors for experimentation: Average k-NN, LOF, and SOD detectors. Other than for Average k-NN, we use ELKI framework to execute rest five detectors on tweleve benchmark datasets, used in the manuscript (under review for publication). ELKI is an open source software, and the link, as provided in the paper (under review for publication), is: https://elki-project.github.io/algorithms/
 
 2. Existing Member Selection Approaches for Outlier Detection Ensembels:
-Following are the state-of-art member selection methods for outlier detection ensembles, which we use in this work to validate performance of proposed selector, described as corresponding .R files
+Following are the state-of-art member selection methods for outlier detection ensembles, which we use in this work to build a good ensemble which is accurate as well as diverse (atleast better than random), described as corresponding .R files
 
 (1) Greedy_Select.R: Greedy Selection Method for Ensembles for Outlier Detection [Schubert et. al. 2012]
 
